@@ -1,0 +1,156 @@
+/* ==UserStyle==
+@name           Discoveryplus Better Subtitles
+@description    Improved subtitles for Discovery+ service
+@namespace      github.com/nikovie/Stylish-Discoveryplus
+@homepageURL    https://github.com/nikovie/Stylish-Discoveryplus
+@updateURL      https://userstyles.world/api/style/3010.user.css
+@author         nikovie (https://github.com/nikovie)
+@version        0.1.0
+@license        MIT
+@preprocessor   stylus
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.discoveryplus.com/fi/video/"), regexp("^http[s]?://(?:www.|(?!www))discoveryplus.com/.*/video/.*")
+  @font-face
+    font-family: 'Netflix Sans'
+    font-weight: 100
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+  @font-face
+    font-family: 'Netflix Sans'
+    font-weight: 300
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+  @font-face
+    font-family: 'Netflix Sans'
+    font-weight: 400
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+  @font-face
+    font-family: 'Netflix Sans'
+    font-weight: 700
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+  @font-face
+    font-family: 'Netflix Sans'
+    font-weight: 800
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+  @font-face
+    font-family: 'Netflix Sans'
+    font-weight: 900
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+  /* Disable font selector */
+  div.DropUpWrapper-eMQoBJ.gaarpm label.MenuItem-iOKXjb.SubMenuItemStyled-eJkNpv:nth-child(4)
+    cursor: not-allowed
+    pointer-events: all !important
+
+  div.DropUpWrapper-eMQoBJ.gaarpm label.MenuItem-iOKXjb.SubMenuItemStyled-eJkNpv:nth-child(4) div.FakeDropDown-gZCrKs span
+    display: none !important
+
+  div.DropUpWrapper-eMQoBJ.gaarpm label.MenuItem-iOKXjb.SubMenuItemStyled-eJkNpv:nth-child(4) select
+    pointer-events: none !important
+
+  /* Container of subtitles */
+  .hBICZ
+    display: block !important
+    white-space: nowrap !important
+    text-align: center !important
+
+  /* Subtitles */
+  .coOXgO,
+  .KkOXj,
+  .jagFGO,
+  .ljBye,
+  .lmOKbD,
+  .hwIgib,
+  .ivsMbP,
+  .eTjRkY,
+  .bLGxZF,
+  .bUASld,
+  .ibfnYB,
+  .evrSQw,
+  .hARRGl,
+  .eAchiN,
+  .bdOJms,
+  .iDdORM,
+  .nnCRI,
+  .ikwODL,
+  .gvKQMW,
+  .kRfqPi,
+  .hoGIIh,
+  .iVOpqY,
+  .hpcSVB,
+  .cRaMsJ,
+  .ikzRAw,
+  .gLVtUw,
+  .jdEsKY,
+  .csKMfX,
+  .faoUKe,
+  .gvmtFK,
+  .hAZjiA,
+  .bbGSzt,
+  .eehlZw,
+  .gFzJiE,
+  .bnrAMZ,
+  .leiMFV,
+  .kxpAMp,
+  .lfLwjC,
+  .jqFVab,
+  .kQKYZP
+    background-color: transparent !important
+    font-family: Netflix Sans, Helvetica Nueue, Helvetica, Arial, sans-serif !important
+    line-height: normal !important
+    font-weight: normal !important
+    color: #ffffff !important
+    text-shadow: #000000 0px 0px 7px!important
+    white-space: nowrap !important
+    text-align: center !important
+
+  /* font-size 50% */
+  .coOXgO,
+  .KkOXj,
+  .jagFGO,
+  .ljBye,
+  .lmOKbD,
+  .hwIgib,
+  .ivsMbP,
+  .eTjRkY,
+  .bLGxZF,
+  .bUASld
+    font-size: 150% !important
+
+  /* font-size 75% */
+  .ibfnYB,
+  .evrSQw,
+  .hARRGl,
+  .eAchiN,
+  .bdOJms,
+  .iDdORM,
+  .nnCRI,
+  .ikwODL,
+  .gvKQMW,
+  .kRfqPi
+    font-size: 225% !important
+
+  /* font-size 100% */
+  .hoGIIh,
+  .iVOpqY,
+  .hpcSVB,
+  .cRaMsJ,
+  .ikzRAw,
+  .gLVtUw,
+  .jdEsKY,
+  .csKMfX,
+  .faoUKe,
+  .gvmtFK
+    font-size: 300% !important
+
+  /* font-size 150% */
+  .hAZjiA,
+  .bbGSzt,
+  .eehlZw,
+  .gFzJiE,
+  .bnrAMZ,
+  .leiMFV,
+  .kxpAMp,
+  .lfLwjC,
+  .jqFVab,
+  .kQKYZP
+    font-size: 400% !important
+

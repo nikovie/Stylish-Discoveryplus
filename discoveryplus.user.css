@@ -1,8 +1,12 @@
 /* ==UserStyle==
 @name           Discoveryplus Better Subtitles
-@namespace      discoveryplus.com
-@version        0.1.0
 @description    Improved subtitles for Discovery+ service
+@namespace      github.com/nikovie/Stylish-Discoveryplus
+@homepageURL    https://github.com/nikovie/Stylish-Discoveryplus
+@updateURL      https://userstyles.world/api/style/3010.user.css
+@author         nikovie (https://github.com/nikovie)
+@version        0.1.0
+@license        MIT
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.discoveryplus.com/fi/video/"), regexp("^http[s]?://(?:www.|(?!www))discoveryplus.com/.*/video/.*") {
